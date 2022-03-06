@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns:  auto;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+    
+    .vd-background{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        object-fit: cover;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+
+    }
+}
+
+@media (min-aspect-ratio: 9/16)
+{
+    .vd-background{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 9/16)
+{
+    .vd-background{
+        width: auto;
+        height: 100%;
+        /*  */
+    }
+}
